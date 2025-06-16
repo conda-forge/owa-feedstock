@@ -1,5 +1,5 @@
 {% set name = "owa" %}
-{% set version = "0.3.9.post1" %}
+{% set version = "0.4.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/owa-{{ version }}.tar.gz
-  sha256: 9e38e3912a57e9b524f65147460256d47919be286109ad8465511f48eb81fd32
+  sha256: 17d1c804beb3111a06ad5f907a8b473e568a375ca02dbbf7ad2862b5f9de5869
 
 build:
   noarch: python
@@ -28,6 +28,7 @@ requirements:
     - owa-core
     - owa-env-desktop
     - owa-env-gst
+    - owa-msgs
 
 test:
   imports:

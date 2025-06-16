@@ -28,6 +28,7 @@ requirements:
     - owa-core
     - owa-env-desktop
     - owa-env-gst
+    - owa-msgs
 
 test:
   imports:
